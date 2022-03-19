@@ -45,15 +45,14 @@ namespace TS.LocalizationSystem
             {
                 Locale.en_US, new LocaleConfig()
                 {
-                    //Name = "English - United States",
-                    Name = "English",
+                    Name = "English - United States",
                     ReferenceType = Locale.en_US,
                     Language = Languages[Language.English],
                     SystemLanguages = new SystemLanguage[]
                     {
                         SystemLanguage.English
                     },
-                    DateFormat = "dd-MM-yyyy",
+                    DateFormat = "dd/MM/yyyy",
                     DateSeparator = "/",
                     DateEndianness = LocaleConfig.EndiannessType.Little
                 }
@@ -61,8 +60,7 @@ namespace TS.LocalizationSystem
             {
                 Locale.pt_PT, new LocaleConfig()
                 {
-                    //Name = "Portuguese - Portugal",
-                    Name = "Português",
+                    Name = "Portuguese - Portugal",
                     ReferenceType = Locale.pt_PT,
                     Language = Languages[Language.Portuguese],
                     SystemLanguages = new SystemLanguage[]

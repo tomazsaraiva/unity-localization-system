@@ -34,7 +34,7 @@ namespace TS.LocalizationSystem.Demo
         public void SetLocale(LocaleConfig locale)
         {
             _locale = locale.ReferenceType;
-            _label.text = locale.Name;
+            _label.text = locale.Language.Name;
         }
 
         private void Button_OnClick()
