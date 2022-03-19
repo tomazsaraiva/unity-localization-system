@@ -1,6 +1,4 @@
 #region Includes
-using System;
-
 using UnityEngine;
 using UnityEngine.UI;
 #endregion
@@ -23,6 +21,7 @@ namespace TS.LocalizationSystem.Demo
         {
             // Necessary to update all the app with the default locale.
             // Or if the locale is being saved as a pref, set the saved one.
+            LocaleManager.LocaleChanged += LocaleManager_LocaleChanged;
             LocaleManager.SetDefaultLocale();
 
             foreach (var locale in LocaleSettings.Locales.Values)
@@ -33,6 +32,11 @@ namespace TS.LocalizationSystem.Demo
             }
             
             _buttonHello.onClick.AddListener(ButtonHello_OnClick);
+        }
+
+        private void LocaleManager_LocaleChanged(LocaleConfig current, int updateNumber)
+        {
+            _labelHello.text = null;
         }
 
         private void LanguageButton_Pressed(LanguageButton button, Locale locale)

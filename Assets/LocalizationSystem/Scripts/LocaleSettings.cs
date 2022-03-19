@@ -43,11 +43,11 @@ namespace TS.LocalizationSystem
         public static readonly Dictionary<Locale, LocaleConfig> Locales = new Dictionary<Locale, LocaleConfig>()
         {
             {
-                Locale.en_us, new LocaleConfig()
+                Locale.en_US, new LocaleConfig()
                 {
                     //Name = "English - United States",
                     Name = "English",
-                    ReferenceType = Locale.en_us,
+                    ReferenceType = Locale.en_US,
                     Language = Languages[Language.English],
                     SystemLanguages = new SystemLanguage[]
                     {
@@ -55,16 +55,15 @@ namespace TS.LocalizationSystem
                     },
                     DateFormat = "dd-MM-yyyy",
                     DateSeparator = "/",
-                    DateEndianness = LocaleConfig.EndiannessType.Little,
-                    ThemeName = "en"
+                    DateEndianness = LocaleConfig.EndiannessType.Little
                 }
             },
             {
-                Locale.pt_pt, new LocaleConfig()
+                Locale.pt_PT, new LocaleConfig()
                 {
                     //Name = "Portuguese - Portugal",
                     Name = "Português",
-                    ReferenceType = Locale.pt_pt,
+                    ReferenceType = Locale.pt_PT,
                     Language = Languages[Language.Portuguese],
                     SystemLanguages = new SystemLanguage[]
                     {
@@ -72,8 +71,7 @@ namespace TS.LocalizationSystem
                     },
                     DateFormat = "dd-MM-yyyy",
                     DateSeparator = "-",
-                    DateEndianness = LocaleConfig.EndiannessType.Little,
-                    ThemeName = "pt"
+                    DateEndianness = LocaleConfig.EndiannessType.Little
                 }
             }
         };
@@ -103,7 +101,7 @@ namespace TS.LocalizationSystem
         }
         public static LocaleConfig GetDefault()
         {
-            return Locales[Locale.en_us];
+            return Locales[Locale.en_US];
         }
 
         public static List<LocaleConfig> GetActiveLocales()
