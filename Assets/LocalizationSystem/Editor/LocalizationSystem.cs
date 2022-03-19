@@ -139,7 +139,7 @@ namespace AttentionLab.Editor
                     }
 
                     // Keep only the languages.
-                    languages = fields.Values.Select(o => o.ToString()).ToArray().Skip(2).ToArray();
+                    languages = fields.Values.Select(o => o.ToString()).ToArray().Skip(1).ToArray();
 
                     // Init the language dictionary.
                     _languages = new Dictionary<string, List<string>>();
@@ -154,7 +154,7 @@ namespace AttentionLab.Editor
                 _keys.Add(fields["Key"].ToString());
 
                 // Keep only the translations.
-                string[] values = fields.Values.Select(o => o.ToString()).ToArray().Skip(2).ToArray();
+                string[] values = fields.Values.Select(o => o.ToString()).ToArray().Skip(1).ToArray();
 
                 // Go through each translation and fill in the language dictionary.
                 for (int i_lang = 0; i_lang < values.Length; i_lang++)

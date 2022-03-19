@@ -11,13 +11,14 @@ namespace TS.LocalizationSystem
 {
     /// <summary>
     /// All the locales supported by the application.
+    /// https://en.wikipedia.org/wiki/Locale_(computer_software)
     /// https://www.science.co.il/language/Locale-codes.php
     /// </summary>
     public enum Locale
     {
         NotDefined,
-        en_us,
-        pt_pt
+        en_US,
+        pt_PT
     }
 
     public class LocaleConfig
